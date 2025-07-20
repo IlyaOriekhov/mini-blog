@@ -20,6 +20,6 @@ export function middleware(request) {
 export const config = {
   matcher: [
     //пропускаєм всі шляхи та файли
-    "/((?!api|_next/static|_next/image|assets|favicon.ico).*)",
+    "/((?!api|_next/static|_next/image|assets|favicon.ico|icon.svg).*)",
   ],
 };

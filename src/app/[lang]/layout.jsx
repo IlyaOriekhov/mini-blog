@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
 
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
@@ -21,8 +20,6 @@ export default async function RootLayout({ children, params: { lang } }) {
 
   return (
     <html lang={lang}>
-      <link rel="icon" href="../icon.svg" type="image/svg+xml" sizes="any" />
-
       <body className={inter.className} suppressHydrationWarning={true}>
         <div className="container">
           <Header lang={lang} navigation={dict.navigation} />
