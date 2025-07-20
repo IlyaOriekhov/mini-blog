@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Міні-блог на Next.js
 
-## Getting Started
+Це невеликий багатомовний блог, створений в рамках тестового завдання. Проєкт демонструє ключові можливості фреймворку Next.js з використанням App Router, включаючи статичну генерацію (SSG), рендеринг на стороні сервера (SSR) та вбудовану інтернаціоналізацію (i18n).
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### **[Подивитись живу версію Deployed on Vercel](https://mini-blog-beige-xi.vercel.app/en)**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Основні можливості
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Міжнародна підтримка (i18n):** Реалізовано підтримку двох мов (англійська `en` та українська `uk`) за допомогою вбудованого роутингу Next.js.
+- **Рендеринг на сервері (SSR):** Головна сторінка зі списком постів є серверним компонентом, що отримує дані на сервері.
+- **Статична генерація сайту (SSG):** Динамічні сторінки для постів (`/posts/[id]`) попередньо генеруються під час збірки проєкту за допомогою `generateStaticParams`.
+- **Кастомні сторінки:** Реалізовано власні сторінки для `404 Not Found`, стану завантаження (`loading.jsx`) та обробки помилок (`error.jsx`).
+- **Чиста архітектура:** Проєкт структуровано з використанням `src/` директорії, а стилі інкапсульовані за допомогою CSS Modules.
 
-## Learn More
+## 🛠️ Технологічний стек
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js** (App Router)
+- **React**
+- **CSS Modules**
+- **API:** [JSONPlaceholder](https://jsonplaceholder.typicode.com/) для отримання даних.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Як запустити локально
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Клонуйте репозиторій:**
 
-## Deploy on Vercel
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/IlyaOriekhov/mini-blog)
+    cd your-repo-name
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    _(заміни на своє посилання з GitHub)_
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Встановіть залежності:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Запустіть сервер для розробки:**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Відкрийте проєкт у браузері:**
+    Перейдіть за адресою [http://localhost:3000](http://localhost:3000).
+
+---
