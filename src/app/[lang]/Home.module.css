@@ -1,0 +1,41 @@
+.title {
+  color: #333;
+  text-align: center;
+}
+
+.postList {
+  list-style: none;
+  padding: 0;
+}
+
+.postItem {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postTitle {
+  font-size: 1.2rem;
+  margin: 0;
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.viewButton {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.viewButton:hover {
+  background-color: #005bb5;
+}
