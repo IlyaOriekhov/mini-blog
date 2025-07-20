@@ -10,6 +10,13 @@ async function getPosts() {
   return res.json();
 }
 
+export async function generateMetadata({ params: { lang } }) {
+  const dict = await getDictionary(lang);
+  return {
+    title: dict.navigation.home,
+  };
+}
+
 export default async function HomePage({ params: { lang } }) {
   const dict = await getDictionary(lang);
   const posts = await getPosts();
