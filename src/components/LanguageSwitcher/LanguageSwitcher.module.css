@@ -1,0 +1,16 @@
+.switcher {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.switcher a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+
+.switcher .active {
+  color: #0070f3;
+  text-decoration: underline;
+}

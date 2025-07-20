@@ -15,11 +15,11 @@ export function middleware(request) {
   //перенапрявляю на урл за замовч\
   request.nextUrl.pathname = `/${defaultLocale}${pathname}`;
   return NextResponse.redirect(request.nextUrl);
-
-  export const config = {
-    matcher: [
-      //пропускаєм всі шляхи та файли
-      "/((?!api|_next/static|_next/image|assets|favicon.ico).*)",
-    ],
-  };
 }
+
+export const config = {
+  matcher: [
+    //пропускаєм всі шляхи та файли
+    "/((?!api|_next/static|_next/image|assets|favicon.ico).*)",
+  ],
+};
