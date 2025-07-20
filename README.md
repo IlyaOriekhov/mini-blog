@@ -28,7 +28,7 @@
 1.  **Клонуйте репозиторій:**
 
     ```bash
-    git clone [https://github.com/IlyaOriekhov/mini-blog](https://github.com/IlyaOriekhov/mini-blog)
+    git clone repo
     cd your-repo-name
     ```
 
