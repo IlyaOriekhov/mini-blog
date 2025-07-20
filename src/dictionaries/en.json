@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About"
+  },
+  "home": {
+    "pageTitle": "All Posts"
+  },
+  "post": {
+    "viewButton": "View Post"
+  },
+  "about": {
+    "pageTitle": "About Us",
+    "description": "This is a small multilingual blog created with Next.js."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Could not find the requested page."
+  },
+  "error": {
+    "title": "Something went wrong!",
+    "button": "Try again"
+  }
+}
